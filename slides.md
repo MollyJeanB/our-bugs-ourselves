@@ -23,7 +23,9 @@ transition: slide-left
 
 <img alt="3 animated bugs with the text Hello" src="https://media.giphy.com/media/3o7TKTRz6xTA8fiGD6/giphy.gif" style="margin: 0 auto" />
 </div>
+<p style="opacity: 75%; text-align: center">(GIF: Parker Jackson via GIPHY)</p>
 
+<!-- Hi everybody! Today I want to talk to you about a topic we all know and love--bugs!  -->
 ---
 
 # Introduction
@@ -34,19 +36,26 @@ transition: slide-left
 
 # 3. Bugs as Opportunities
 
+<!-- And specifically, I want to think about bugs in 3 ways: as nuisances, as tragedies, and as opportunities  -->
+
 ---
 
 # Introduction: Grace Hopper (maybe) and the "First actual case of bug being found"
 
 <img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/moth.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
 
-<p style="text-align: center">RIP Moth (Photo: Smithsonian)</p>
+<p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
+
+<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II. 
+ -->
 
 ---
 
 <img alt="Computer relays" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/relay.jpeg" style="display: block; margin: 0 auto; max-height: 90%"/>
 
-<p style="text-align: center">A bank of relays of the Harvard Mark II (Photo: Smithsonian)</p>
+<p style=" opacity: 75%; text-align: center" >A bank of relays of the Harvard Mark II (Photo: Smithsonian)</p>
+
+<!-- This is a bank of relays on the Mark II, where the moth was found. It was finished in 1947 was an early electro-mechanical computers. It was built at Harvard and funded by the U.S. Navy to calculate ballistics. Most of the early computers were for war and astronomy. And making fabrics. -->
 ---
 layout: cover
 ---
@@ -68,7 +77,10 @@ layout: two-cols
 <template v-slot:right>
 
 <div style="padding-top: 50px;">
-<img src="https://media.giphy.com/media/3orieTf8aTrSXmonqo/giphy.gif" alt="Bart and Homer Simpson sitting at a table eating, with the caption 'Dad, there's a bug on that'" style="display: block; margin-left: 30px" />
+<img src="https://media.giphy.com/media/3orieTf8aTrSXmonqo/giphy.gif" alt="Bart and Homer Simpson sitting at a table eating, with the caption 'Dad, there's a bug on that'" style="display: block; margin-left: 30px; max-width: 90%;" />
+
+<p style="opacity: 75%; text-align: center; width: 100%;" >(GIF: Simpsons via GIPHY, please don't sue)</p>
+
 </div>
 </template>
 
