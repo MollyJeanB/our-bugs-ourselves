@@ -8,10 +8,6 @@
   },
   "dependencies": {
     "@slidev/cli": "^0.43.7",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "slidev-theme-dracula": "^0.2.0",
-    "slidev-theme-flayyer": "^1.0.2",
-    "slidev-theme-takahashi": "^1.0.0"
+    "@slidev/theme-apple-basic": "^0.20.0"
   }
 }
