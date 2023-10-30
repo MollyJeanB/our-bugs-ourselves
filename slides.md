@@ -27,14 +27,25 @@ transition: slide-left
 
 <!-- Hi everybody! Today I want to talk to you about a topic we all know and love--bugs!  -->
 ---
+layout: two-cols
+---
 
-# Introduction
+::default::
+
+# Introduction: Bug History
 
 # 1. Bugs as Nuisances
 
 # 2. Bugs as Tragedies
 
 # 3. Bugs as Opportunities
+
+::right::
+
+<img alt="A cartoon spider in boots and a leather jacket holding knives and pizza" src="https://media.giphy.com/media/ZtLg38lWRcLGE/giphy.gif" style="" />
+<p style="opacity: 75%; text-align: center">(GIF: Fox via GIPHY)</p>
+
+
 
 <!-- And specifically, I want to think about bugs in 3 ways: as nuisances, as tragedies, and as opportunities  -->
 
@@ -46,7 +57,7 @@ transition: slide-left
 
 <p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
 
-<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II. 
+<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvards logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II. 
  -->
 
 ---
@@ -55,7 +66,16 @@ transition: slide-left
 
 <p style=" opacity: 75%; text-align: center" >A bank of relays of the Harvard Mark II (Photo: Smithsonian)</p>
 
-<!-- This is a bank of relays on the Mark II, where the moth was found. It was finished in 1947 was an early electro-mechanical computers. It was built at Harvard and funded by the U.S. Navy to calculate ballistics. Most of the early computers were for war and astronomy. And making fabrics. -->
+<!--
+This is a bank of relays on the Mark II, where the moth was found. It was finished in 1947 was an early electro-mechanical computers. It was built at Harvard and funded by the U.S. Navy to calculate ballistics. Most of the early computers were for war and astronomy. And making fabrics.
+
+But anyway, the relays. The relays are mechanical components that could be opened and closed sequentially to execute programs. And on the day in question, September 9, 1947, a moth got jammed between points at Relay # 70, Panel F, and jammed the relay.
+ -->
+
+---
+<img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/moth.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
+
+<p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
 ---
 layout: cover
 ---
@@ -127,3 +147,7 @@ export const getAiResponse = (
 };
 ```
 ---
+
+<img alt="A caterpillar going into a cocoon and saying Goodbye" src="https://media.giphy.com/media/26ufpPR34nEWwZphC/giphy.gif" style="margin: 60px auto 0" />
+<p style="opacity: 75%; text-align: center">(GIF: Parker Jackson via GIPHY)</p>
+
