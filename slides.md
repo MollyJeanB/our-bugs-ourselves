@@ -57,7 +57,7 @@ layout: two-cols
 
 <p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
 
-<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvards logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II. 
+<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvards logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II.
  -->
 
 ---
@@ -73,9 +73,51 @@ But anyway, the relays. The relays are mechanical components that could be opene
  -->
 
 ---
-<img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/moth.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
 
-<p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
+<img alt="Photograph of logbook page with moth taped to it, close up" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/moth2.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
+
+<p style="text-align: center; opacity: 75%;">(Photo: Smithsonian)</p>
+
+<!--
+You may have heard the moth described as the first computer bug
+ -->
+
+---
+
+<img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/hopper.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
+
+<p style="text-align: center; opacity: 75%;">(Photo: Smithsonian)</p>
+
+<!--
+Hopper drew pictures
+ -->
+
+---
+layout: two-cols
+---
+
+::default::
+
+<img alt="Statue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear.jpeg" style="display: block; max-width: 75%"/>
+
+<p style="opacity: 75%;">(Bugbear sculpture in Thieles Garten, Bremerhaven via Wikipedia)</p>
+
+::right::
+
+<img alt="Bugbear from Baldur's gate" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear_baldur.jpeg" style="display: block; max-width: 60%"/>
+
+<p style="opacity: 75%;">(Via Baldur’s Gate 3 Wiki)</p>
+
+<img alt="Cartoon bugbear" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear_pony.jpeg" style="display: block; max-width: 60%"/>
+
+<p style="opacity: 75%;">(Discovery family via reviewersunite.com)</p>
+
+
+
+<!--
+bugbear
+ -->
+
 ---
 layout: cover
 ---
