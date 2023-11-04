@@ -74,22 +74,36 @@ But anyway, the relays. The relays are mechanical components that could be opene
 
 ---
 
-<img alt="Photograph of logbook page with moth taped to it, close up" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/moth2.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
+<img alt="Photograph of logbook page with moth taped to it, close up" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/moth2.jpeg" style="display: block; margin: 60px auto 0; max-width: 60%"/>
 
 <p style="text-align: center; opacity: 75%;">(Photo: Smithsonian)</p>
 
 <!--
-You may have heard the moth described as the first computer bug
+You may have heard the moth described as the first computer bug, or as the origin of term computer bug. And in a lot of sources, the moth in the logbook is attributed to pioneering computer scientist Grace Hopper. In reality, neither of those things are true. Hopper was certainly on the team that found the moth, but the logbook entry is not attributed to a specific person, and archivists have noted that the handwriting doesn't seem like a good match for Hopper's.
  -->
 
 ---
 
-<img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/hopper.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
+<img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/hopper.jpeg" style="display: block; margin: 60px auto 0; max-width: 60%"/>
 
 <p style="text-align: center; opacity: 75%;">(Photo: Smithsonian)</p>
 
 <!--
-Hopper drew pictures
+Hopper did make these doodles of computer bugs she encountered. She was known to be a big jokester. It's a little hard to read, but I think the lower left one says "...he who seeds wrong data." Or maybe it's "wormy data." And I think the top right says "Kitchie boo boo bug. He who goes around loosening relays." And in the bottom right, "he who brings good data."
+
+And when she made those cartoons (I'm not actually sure if they're from before or after the moth, I couldn't find a year for them), the term bug was already in the engineering lexicon.
+ -->
+
+---
+
+# "It has been just so in all of my inventions. The first step is an intuition, and comes with a burst, then difficulties arise—this thing gives out and [it is] then that 'Bugs'—as such little faults and difficulties are called—show themselves and months of intense watching, study and labor are requisite before commercial success or failure is certainly reached."
+
+<p style="margin-left: 50%">-Thomas Edison in a letter to Theodore Puskas, 1878</p>
+
+<!--
+ In fact, Thomas Edison is well known to have used the term "bug" to describe problems with electrical circuits. Here's a quote from a letter he wrote in 1878.
+
+ And I just love this description of engineering, or honestly any kind of act of creativity and invention. Intuition in a burst, followed by difficulties.
  -->
 
 ---
@@ -98,7 +112,9 @@ layout: two-cols
 
 ::default::
 
-<img alt="Statue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear.jpeg" style="display: block; max-width: 75%"/>
+## Bug comes from the Middle English word _bugge_, as in bugbear or bugaboo--monsters!
+
+<img alt="Statue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear.jpeg" style="display: block; max-width: 65%"/>
 
 <p style="opacity: 75%;">(Bugbear sculpture in Thieles Garten, Bremerhaven via Wikipedia)</p>
 
@@ -112,10 +128,12 @@ layout: two-cols
 
 <p style="opacity: 75%;">(Discovery family via reviewersunite.com)</p>
 
-
-
 <!--
-bugbear
+And the word bug itself comes from the old english bugge, which did not refer to insects but rather bugbears or bugaboos, which were monsters. And here are some bugbears, including one from Baldur's gate and My Little Pony.
+
+So the moth in the logbook was almost definitely documented with humorous intent, a real life bug causing a real life engineering problem.
+
+And I love how it represents a lot of how we think and talk about bugs in software, whether they're insects or monsters, as these outside interlopers who come into our code and muck things up. 
  -->
 
 ---
