@@ -96,9 +96,12 @@ And when she made those cartoons (I'm not actually sure if they're from before o
 
 ---
 
-# "It has been just so in all of my inventions. The first step is an intuition, and comes with a burst, then difficulties arise—this thing gives out and [it is] then that 'Bugs'—as such little faults and difficulties are called—show themselves and months of intense watching, study and labor are requisite before commercial success or failure is certainly reached."
+<div style="padding-top: 90px;">
+
+## "It has been just so in all of my inventions. The first step is an intuition, and comes with a burst, then difficulties arise—this thing gives out and [it is] then that 'Bugs'—as such little faults and difficulties are called—show themselves and months of intense watching, study and labor are requisite before commercial success or failure is certainly reached."
 
 <p style="margin-left: 50%">-Thomas Edison in a letter to Theodore Puskas, 1878</p>
+</div>
 
 <!--
  In fact, Thomas Edison is well known to have used the term "bug" to describe problems with electrical circuits. Here's a quote from a letter he wrote in 1878.
@@ -114,19 +117,15 @@ layout: two-cols
 
 ## Bug comes from the Middle English word _bugge_, as in bugbear or bugaboo--monsters!
 
-<img alt="Statue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear.jpeg" style="display: block; max-width: 65%"/>
+<img alt="Statue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear.jpeg" style="display: block; max-width: 50%; padding-top: 20px;"/>
 
-<p style="opacity: 75%;">(Bugbear sculpture in Thieles Garten, Bremerhaven via Wikipedia)</p>
+<p style="opacity: 75%;">(Images via Wikipedia, Baldur's Gate 3 Wiki, and reviewersunite.com)</p>
 
 ::right::
 
-<img alt="Bugbear from Baldur's gate" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear_baldur.jpeg" style="display: block; max-width: 60%"/>
+<img alt="Bugbear from Baldur's gate" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear_baldur.jpeg" style="display: block; max-width: 65%; padding: 0 0 20px 20px;"/>
 
-<p style="opacity: 75%;">(Via Baldur’s Gate 3 Wiki)</p>
-
-<img alt="Cartoon bugbear" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear_pony.jpeg" style="display: block; max-width: 60%"/>
-
-<p style="opacity: 75%;">(Discovery family via reviewersunite.com)</p>
+<img alt="Cartoon bugbear" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/bugbear_pony.jpeg" style="display: block; max-width: 80%; padding-left: 20px;"/>
 
 <!--
 And the word bug itself comes from the old english bugge, which did not refer to insects but rather bugbears or bugaboos, which were monsters. And here are some bugbears, including one from Baldur's gate and My Little Pony.
