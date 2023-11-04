@@ -141,6 +141,14 @@ layout: cover
 
 # Part 1: Bugs as Nuisances
 
+<img alt="Mosquitos attacking peasants" src="https://media.giphy.com/media/D7x9O7llARKHC/giphy.gif" style="display: block; margin: 0 auto; max-width: 45%"/>
+
+<p style="text-align: center; opacity: 75%;">(GIF: Animation Domination High-Def via GIPHY)</p>
+
+<!--
+Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software.
+ -->
+
 ---
 layout: two-cols
 ---
@@ -167,13 +175,20 @@ layout: two-cols
 layout: cover
 ---
 
+<div style="margin-top: 200px">
+
 # Part 2: Bugs as Tragedies
 
+</div>
 ---
 layout: cover
 ---
 
 # Part 3: Bugs as Opportunities
+
+<img alt="Hands opening to reveal bugs" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV6emplNWlrbzhzZnNlN3dyc3R1aW9ocmlqOHM4b3ltd2tiM2diOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hfBvI2Pq6zCYo/giphy.gif" style="display: block; margin: 0 auto; max-width: 85%"/>
+
+<p style="text-align: center; opacity: 75%;">(GIF: Max Litvinov via GIPHY)</p>
 
 ---
 
