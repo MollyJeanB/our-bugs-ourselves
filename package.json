@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@slidev/cli": "^0.43.7",
-    "@slidev/theme-apple-basic": "^0.20.0"
+    "@slidev/theme-apple-basic": "^0.20.0",
+    "slidev-theme-flayyer": "^1.0.2"
   }
 }
