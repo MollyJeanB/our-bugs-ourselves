@@ -146,7 +146,7 @@ layout: cover
 <p style="text-align: center; opacity: 75%;">(GIF: Animation Domination High-Def via GIPHY)</p>
 
 <!--
-Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software. Those facepalm moments
+Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software. Those facepalm moments.
  -->
 
 ---
@@ -163,6 +163,10 @@ layout: two-cols
 
 <p style="opacity: 75%; margin-left: 50px;">(GIF: Parker Jackson via GIPHY)</p>
 
+
+<!--
+Here's a fun one that I was responsible for recently. This is from telehealth, but it was caught before the beta release thankfully (thanks Sofia, I think).
+ -->
 ---
 
 # A class applied to the wrong element 🤦‍♀️
@@ -189,12 +193,23 @@ export function VideoThumbnail({
  )
 };
 ```
+
+<!--
+What happened here is that I needed to add a tailwind class to mirror the video thumbnail. But when the video is off, the thumbnail display's the user's name instead. Buttttt I applied the mirroring class to the div that wraps the video itself rather than the video, and I never tested what that would look like with the video off.
+ -->
+
 ---
+
+# The case of the 0 minute mile
 
 <img alt="A screenshot that says 'Race Page: 0:00/mi'" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/pace.png" style="display: block; max-width: 40%; margin: 0 auto;  "/>
 
-<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 50%"/>
+<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 45%"/>
 
+
+<!--
+And here's on I saw as a user. This year I ran the Hood to Coast relay. When you register, you need to enter a pace from a previous race, which the organizers will use to figure out how fast your team is and hence, what your start time should be. But at some point, the entered values were converted from one system to another, and any values without a second input were converted to zeroes. Which means that multiple teammates were registered with a 0 minute mile. Now this is a fast, good-looking group of people, but none of them can run a 0 minute mile. So it was a pretty big headache for our team captain to get our start time adjusted.
+ -->
 ---
 layout: two-cols
 ---
@@ -216,6 +231,10 @@ layout: two-cols
 
 </div>
 </template>
+
+<!--
+And here's a good one from Rolf, from his time at a major Seattle area tech company.
+ -->
 
 ---
 layout: cover
