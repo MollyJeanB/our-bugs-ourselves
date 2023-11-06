@@ -146,8 +146,54 @@ layout: cover
 <p style="text-align: center; opacity: 75%;">(GIF: Animation Domination High-Def via GIPHY)</p>
 
 <!--
-Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software.
+Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software. Those facepalm moments
  -->
+
+---
+layout: two-cols
+---
+
+::default::
+
+<img alt="A screenshot of backwards text" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/backwards.png" style="display: block; margin-top: 60px"/>
+
+::right::
+
+<img alt="A cartoon spider shaking its head no" src="https://media.giphy.com/media/3oz8xZLqPGjVbDfda8/giphy.gif" style="display: block; margin: 60px 0 0 50px;max-width: 65%"/>
+
+<p style="opacity: 75%; margin-left: 50px;">(GIF: Parker Jackson via GIPHY)</p>
+
+---
+
+# A class applied to the wrong element 🤦‍♀️
+
+```js {all|12|16|all}
+
+export function VideoThumbnail({
+  name,
+  isMirrored,
+  videoRef,
+  videoTransmissionEnabled,
+}) {
+ return (
+  <div
+    className={twMerge(
+      classNames("flex justify-center items-center rounded-2xl", {
+        "scale-x-[-1]": isMirrored,
+      })
+    )}>
+    {
+      videoTransmissionEnabled ? <video ref={videoRef} /> : <p> {name} <p/>
+    }
+  </div>
+ )
+};
+```
+---
+
+<img alt="A screenshot that says 'Race Page: 0:00/mi'" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/pace.png" style="display: block; max-width: 40%; margin: 0 auto;  "/>
+
+<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 50%"/>
 
 ---
 layout: two-cols
@@ -190,36 +236,6 @@ layout: cover
 
 <p style="text-align: center; opacity: 75%;">(GIF: Max Litvinov via GIPHY)</p>
 
----
-
-# Some Fun I Had Along the Way
-
-Fun with loops!
-
-```ts {all|16|18-20}
-import { getRandomWordFromArray } from "./string";
-
-const phraseBank: string[] = [
-  `Actually, it's pronounced ciabatta`,
-  `Actually, it's pronounced aioli`,
-  `I have a lot of BLT NFTs. You should have bought in on the ground floor.`,
-];
-
-export const getAiResponse = (
-  previousPhrase: string | undefined,
-  phrases: string[] = phraseBank
-): string => {
-  if (phrases.length < 2) {
-    return phrases[0];
-  }
-  let responsePhrase = getRandomWordFromArray(phrases);
-  //regenerate phrase if it matches the previous one
-  while (responsePhrase === previousPhrase) {
-    responsePhrase = getRandomWordFromArray(phrases);
-  }
-  return responsePhrase;
-};
-```
 ---
 
 <img alt="A caterpillar going into a cocoon and saying Goodbye" src="https://media.giphy.com/media/26ufpPR34nEWwZphC/giphy.gif" style="margin: 60px auto 0" />
