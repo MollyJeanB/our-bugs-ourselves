@@ -141,6 +141,75 @@ layout: cover
 
 # Part 1: Bugs as Nuisances
 
+<img alt="Mosquitos attacking peasants" src="https://media.giphy.com/media/D7x9O7llARKHC/giphy.gif" style="display: block; margin: 0 auto; max-width: 45%"/>
+
+<p style="text-align: center; opacity: 75%;">(GIF: Animation Domination High-Def via GIPHY)</p>
+
+<!--
+Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software. Those facepalm moments.
+ -->
+
+---
+layout: two-cols
+---
+
+::default::
+
+<img alt="A screenshot of backwards text" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/backwards.png" style="display: block; margin-top: 60px"/>
+
+::right::
+
+<img alt="A cartoon spider shaking its head no" src="https://media.giphy.com/media/3oz8xZLqPGjVbDfda8/giphy.gif" style="display: block; margin: 60px 0 0 50px;max-width: 65%"/>
+
+<p style="opacity: 75%; margin-left: 50px;">(GIF: Parker Jackson via GIPHY)</p>
+
+
+<!--
+Here's a fun one that I was responsible for recently. This is from telehealth, but it was caught before the beta release thankfully (thanks Sofia, I think).
+ -->
+---
+
+# A class applied to the wrong element 🤦‍♀️
+
+```js {all|12|16|all}
+
+export function VideoThumbnail({
+  name,
+  isMirrored,
+  videoRef,
+  videoTransmissionEnabled,
+}) {
+ return (
+  <div
+    className={twMerge(
+      classNames("flex justify-center items-center rounded-2xl", {
+        "scale-x-[-1]": isMirrored,
+      })
+    )}>
+    {
+      videoTransmissionEnabled ? <video ref={videoRef} /> : <p> {name} <p/>
+    }
+  </div>
+ )
+};
+```
+
+<!--
+What happened here is that I needed to add a tailwind class to mirror the video thumbnail. But when the video is off, the thumbnail display's the user's name instead. Buttttt I applied the mirroring class to the div that wraps the video itself rather than the video, and I never tested what that would look like with the video off.
+ -->
+
+---
+
+# The case of the 0 minute mile
+
+<img alt="A screenshot that says 'Race Page: 0:00/mi'" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/pace.png" style="display: block; max-width: 40%; margin: 0 auto;  "/>
+
+<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 45%"/>
+
+
+<!--
+And here's on I saw as a user. This year I ran the Hood to Coast relay. When you register, you need to enter a pace from a previous race, which the organizers will use to figure out how fast your team is and hence, what your start time should be. But at some point, the entered values were converted from one system to another, and any values without a second input were converted to zeroes. Which means that multiple teammates were registered with a 0 minute mile. Now this is a fast, good-looking group of people, but none of them can run a 0 minute mile. So it was a pretty big headache for our team captain to get our start time adjusted.
+ -->
 ---
 layout: two-cols
 ---
@@ -163,48 +232,29 @@ layout: two-cols
 </div>
 </template>
 
+<!--
+And here's a good one from Rolf, from his time at a major Seattle area tech company.
+ -->
+
 ---
 layout: cover
 ---
 
+<div style="margin-top: 200px">
+
 # Part 2: Bugs as Tragedies
 
+</div>
 ---
 layout: cover
 ---
 
 # Part 3: Bugs as Opportunities
 
----
+<img alt="Hands opening to reveal bugs" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV6emplNWlrbzhzZnNlN3dyc3R1aW9ocmlqOHM4b3ltd2tiM2diOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hfBvI2Pq6zCYo/giphy.gif" style="display: block; margin: 0 auto; max-width: 85%"/>
 
-# Some Fun I Had Along the Way
+<p style="text-align: center; opacity: 75%;">(GIF: Max Litvinov via GIPHY)</p>
 
-Fun with loops!
-
-```ts {all|16|18-20}
-import { getRandomWordFromArray } from "./string";
-
-const phraseBank: string[] = [
-  `Actually, it's pronounced ciabatta`,
-  `Actually, it's pronounced aioli`,
-  `I have a lot of BLT NFTs. You should have bought in on the ground floor.`,
-];
-
-export const getAiResponse = (
-  previousPhrase: string | undefined,
-  phrases: string[] = phraseBank
-): string => {
-  if (phrases.length < 2) {
-    return phrases[0];
-  }
-  let responsePhrase = getRandomWordFromArray(phrases);
-  //regenerate phrase if it matches the previous one
-  while (responsePhrase === previousPhrase) {
-    responsePhrase = getRandomWordFromArray(phrases);
-  }
-  return responsePhrase;
-};
-```
 ---
 
 <img alt="A caterpillar going into a cocoon and saying Goodbye" src="https://media.giphy.com/media/26ufpPR34nEWwZphC/giphy.gif" style="margin: 60px auto 0" />
