@@ -57,7 +57,7 @@ layout: two-cols
 
 <p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
 
-<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvards logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II.
+<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvard logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II.
  -->
 
 ---
@@ -141,9 +141,9 @@ layout: cover
 
 # Part 1: Bugs as Nuisances
 
-<img alt="Mosquitos attacking peasants" src="https://media.giphy.com/media/D7x9O7llARKHC/giphy.gif" style="display: block; margin: 0 auto; max-width: 45%"/>
+<img alt="Mosquitos attacking Pedro Pascal" src="https://media.giphy.com/media/13QfNyksL4MBaw/giphy-downsized-large.gif" style="display: block; margin: 0 auto; max-width: 45%"/>
 
-<p style="text-align: center; opacity: 75%;">(GIF: Animation Domination High-Def via GIPHY)</p>
+<p style="text-align: center; opacity: 75%;">(GIF: Four Rest Films via GIPHY)</p>
 
 <!--
 Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software. Those facepalm moments.
@@ -227,7 +227,7 @@ layout: two-cols
 <div style="padding-top: 50px;">
 <img src="https://media.giphy.com/media/3orieTf8aTrSXmonqo/giphy.gif" alt="Bart and Homer Simpson sitting at a table eating, with the caption 'Dad, there's a bug on that'" style="display: block; margin-left: 30px; max-width: 90%;" />
 
-<p style="opacity: 75%; text-align: center; width: 100%;" >(GIF: Simpsons via GIPHY, please don't sue)</p>
+<p style="opacity: 75%; margin-left: 30px;" >(GIF: Simpsons via GIPHY, please don't sue)</p>
 
 </div>
 </template>
@@ -244,19 +244,21 @@ layout: two-cols
 
 # Y2K
 
-* ## Approximately 500 residents in Philadelphia received jury duty summonses for dates in 1900.
+* ## Approximately 500 residents in Philadelphia received jury duty summonses for dates in 1900
 
 <p></p>
 
-* ## In Denmark, the first baby born on January 1 was recorded as being 100 years old.
+* ## In Denmark, the first baby born on January 1 was recorded as being 100 years old
 
 <p></p>
 
-* ## In New York, a video store accidentally generated a $91,250 late fee because the store computer determined a tape rental was 100 years overdue.
+* ## In New York, a video store accidentally generated a $91,250 late fee because the store computer determined a tape rental was 100 years overdue
 
 ::right::
 
-<img src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/y2k.jpeg" alt="A bug plushy wearing a tee shirt that says y2k" style="display: block; margin-left: 30px; max-width: 80%;" />
+<img src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/y2k.jpeg" alt="A bug plushy wearing a tee shirt that says y2k" style="display: block; margin-left: 30px; max-width: 70%;" />
+
+<p style="opacity: 75%; margin-left: 30px;" >(Photo: eBay)</p>
 
 
 <!--
@@ -276,7 +278,7 @@ layout: cover
 </div>
 
 <!--
-Though of course, not all bugs can be reduced to a goofy footnote. While our jobs may not be as high stakes as surgeons or nuclear power engineers, what we build matters. The things we fail to account for, the unhandled edge cases, the mistakes that no one caught in review can have real consequences sometimes.
+Though of course, not all bugs live in the territory of minor bother or humorous historical footnote. While our jobs may not be as high stakes as surgeons or nuclear power engineers, what we build matters. The things we fail to account for, the unhandled edge cases, the mistakes that no one caught in review can have real consequences sometimes.
  -->
 ---
 layout: cover
@@ -289,6 +291,10 @@ layout: cover
 <p></p>
 
 * ## The Northeast blackout of 2003, which resulted in approximately 100 deaths, was set into motion by a race condition in the alarm system at the control room of FirstEnergy, an Akron, Ohio
+
+<!--
+Race conditions are one of those classic programming problems that we all encounter from time to time
+ -->
 
 ---
 
@@ -309,6 +315,24 @@ layout: cover
 <img alt="Hands opening to reveal bugs" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV6emplNWlrbzhzZnNlN3dyc3R1aW9ocmlqOHM4b3ltd2tiM2diOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hfBvI2Pq6zCYo/giphy.gif" style="display: block; margin: 0 auto; max-width: 85%"/>
 
 <p style="text-align: center; opacity: 75%;">(GIF: Max Litvinov via GIPHY)</p>
+
+---
+
+# Solving bugs can...
+
+* ## Deepen understanding
+
+<p></p>
+
+* ## Strengthen relationships
+
+<p></p>
+
+* ## Improve processes
+
+<p></p>
+
+* ## Improve systems
 
 ---
 
