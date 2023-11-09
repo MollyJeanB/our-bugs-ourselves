@@ -208,7 +208,7 @@ What happened here is that I needed to add a tailwind class to mirror the video 
 
 
 <!--
-And here's on I saw as a user. This year I ran the Hood to Coast relay. When you register, you need to enter a pace from a previous race, which the organizers will use to figure out how fast your team is and hence, what your start time should be. But at some point, the entered values were converted from one system to another, and any values without a second input were converted to zeroes. Which means that multiple teammates were registered with a 0 minute mile. Now this is a fast, good-looking group of people, but none of them can run a 0 minute mile. So it was a pretty big headache for our team captain to get our start time adjusted.
+And here's on I saw as a user. This year I ran the Hood to Coast relay. When you register, you need to enter a pace from a previous race, which the organizers will use to figure out how fast your team is and hence, what your start time should be. But at some point, the entered values were converted from one system to another, and any values without a seconds input were converted to zeroes. Which means that multiple teammates were registered with a 0 minute mile. Now this is a fast, good-looking group of people, but none of them can run a 0 minute mile. So it was a pretty big headache for our team captain to get our start time adjusted.
  -->
 ---
 layout: two-cols
@@ -237,16 +237,71 @@ And here's a good one from Rolf, from his time at a major Seattle area tech comp
  -->
 
 ---
+layout: two-cols
+---
+
+::default::
+
+# Y2K
+
+* ## Approximately 500 residents in Philadelphia received jury duty summonses for dates in 1900.
+
+<p></p>
+
+* ## In Denmark, the first baby born on January 1 was recorded as being 100 years old.
+
+<p></p>
+
+* ## In New York, a video store accidentally generated a $91,250 late fee because the store computer determined a tape rental was 100 years overdue.
+
+::right::
+
+<img src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/y2k.jpeg" alt="A bug plushy wearing a tee shirt that says y2k" style="display: block; margin-left: 30px; max-width: 80%;" />
+
+
+<!--
+Y2K is mainly remembered as the bug that wasn't. Well actually, I was ten at the turn of the new millennium, so what I remember is this bug plushy that my grandpa had. If you bonked it against something it made a crashing noise. Did anyone else have this? It's now worth like $8 on ebay I learned. But anyway. The use of two digit shorthand for years of course predates computers, but was standard in early computing due to ruthless bit conservation needs. As the year 2000 approached, there was widespread concern that computer systems would be unable to distinguish dates, causing major chaos.
+
+So while there wasn't widespread crises, there is an amazing list you can find on Wikipedia of things that did go wrong. These are a few of my favorites. And who among hasn't battled
+ -->
+
+---
 layout: cover
 ---
 
 <div style="margin-top: 200px">
 
-# Part 2: Bugs as Tragedies
+# Part 2: Bugs as Crises
 
 </div>
+
+<!--
+Though of course, not all bugs can be reduced to a goofy footnote. While our jobs may not be as high stakes as surgeons or nuclear power engineers, what we build matters. The things we fail to account for, the unhandled edge cases, the mistakes that no one caught in review can have real consequences sometimes.
+ -->
 ---
 layout: cover
+---
+
+# Deadly race conditions
+
+* ## The Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected
+
+<p></p>
+
+* ## The Northeast blackout of 2003, which resulted in approximately 100 deaths, was set into motion by a race condition in the alarm system at the control room of FirstEnergy, an Akron, Ohio
+
+---
+
+# The National Eating Disorders Association's Dangerous ChatBot
+
+<p></p>
+
+## "The recommendations that Tessa gave me was that I could lose 1 to 2 pounds per week, that I should eat no more than 2,000 calories in a day, that I should have a calorie deficit of 500-1,000 calories per day...All of which might sound benign to the general listener. However, to an individual with an eating disorder, the focus of weight loss really fuels the eating disorder."
+
+<p></p>
+
+<p style="margin-left: 40%">-Sharon Maxwell, eating disorder survivor and recovery consultant </p>
+
 ---
 
 # Part 3: Bugs as Opportunities
