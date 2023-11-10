@@ -83,7 +83,7 @@ You may have heard the moth described as the first computer bug, or as the origi
 
 ---
 
-<img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/hopper.jpeg" style="display: block; margin: 60px auto 0; max-width: 60%"/>
+<img alt="Photograph of journal page of bug illustrations" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/hopper.jpeg" style="display: block; margin: 60px auto 0; max-width: 60%"/>
 
 <p style="text-align: center; opacity: 75%;">(Photo: Smithsonian)</p>
 
