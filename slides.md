@@ -36,7 +36,7 @@ layout: two-cols
 
 # 1. Bugs as Nuisances
 
-# 2. Bugs as Tragedies
+# 2. Bugs as Crises
 
 # 3. Bugs as Opportunities
 
@@ -47,7 +47,7 @@ layout: two-cols
 
 
 
-<!-- And specifically, I want to think about bugs in 3 ways: as nuisances, as tragedies, and as opportunities  -->
+<!-- And specifically, I want to think about bugs in 3 ways: as nuisances, as crises, and as opportunities  -->
 
 ---
 
@@ -57,7 +57,7 @@ layout: two-cols
 
 <p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
 
-<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvards logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II.
+<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvard logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II.
  -->
 
 ---
@@ -141,9 +141,9 @@ layout: cover
 
 # Part 1: Bugs as Nuisances
 
-<img alt="Mosquitos attacking peasants" src="https://media.giphy.com/media/D7x9O7llARKHC/giphy.gif" style="display: block; margin: 0 auto; max-width: 45%"/>
+<img alt="Mosquitos attacking Pedro Pascal" src="https://media.giphy.com/media/13QfNyksL4MBaw/giphy-downsized-large.gif" style="display: block; margin: 0 auto; max-width: 45%"/>
 
-<p style="text-align: center; opacity: 75%;">(GIF: Animation Domination High-Def via GIPHY)</p>
+<p style="text-align: center; opacity: 75%;">(GIF: Four Rest Films via GIPHY)</p>
 
 <!--
 Bugs as nuisances is perhaps one of the most familiar ways of thinking about bugs, both as makers and as users of software. Those facepalm moments.
@@ -198,17 +198,17 @@ export function VideoThumbnail({
 What happened here is that I needed to add a tailwind class to mirror the video thumbnail. But when the video is off, the thumbnail display's the user's name instead. Buttttt I applied the mirroring class to the div that wraps the video itself rather than the video, and I never tested what that would look like with the video off.
  -->
 
----
+<!-- ---
 
 # The case of the 0 minute mile
 
 <img alt="A screenshot that says 'Race Page: 0:00/mi'" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/pace.png" style="display: block; max-width: 40%; margin: 0 auto;  "/>
 
-<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 45%"/>
+<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 45%"/> -->
 
 
 <!--
-And here's on I saw as a user. This year I ran the Hood to Coast relay. When you register, you need to enter a pace from a previous race, which the organizers will use to figure out how fast your team is and hence, what your start time should be. But at some point, the entered values were converted from one system to another, and any values without a second input were converted to zeroes. Which means that multiple teammates were registered with a 0 minute mile. Now this is a fast, good-looking group of people, but none of them can run a 0 minute mile. So it was a pretty big headache for our team captain to get our start time adjusted.
+And here's on I saw as a user. This year I ran the Hood to Coast relay. When you register, you need to enter a pace from a previous race, which the organizers will use to figure out how fast your team is and hence, what your start time should be. But at some point, the entered values were converted from one system to another, and any values without a seconds input were converted to zeroes. Which means that multiple teammates were registered with a 0 minute mile. Now this is a fast, good-looking group of people, but none of them can run a 0 minute mile. So it was a pretty big headache for our team captain to get our start time adjusted.
  -->
 ---
 layout: two-cols
@@ -227,7 +227,7 @@ layout: two-cols
 <div style="padding-top: 50px;">
 <img src="https://media.giphy.com/media/3orieTf8aTrSXmonqo/giphy.gif" alt="Bart and Homer Simpson sitting at a table eating, with the caption 'Dad, there's a bug on that'" style="display: block; margin-left: 30px; max-width: 90%;" />
 
-<p style="opacity: 75%; text-align: center; width: 100%;" >(GIF: Simpsons via GIPHY, please don't sue)</p>
+<p style="opacity: 75%; margin-left: 30px;" >(GIF: Simpsons via GIPHY, please don't sue)</p>
 
 </div>
 </template>
@@ -237,16 +237,89 @@ And here's a good one from Rolf, from his time at a major Seattle area tech comp
  -->
 
 ---
+layout: two-cols
+---
+
+::default::
+
+# Y2K
+
+* ## Approximately 500 residents in Philadelphia received jury duty summonses for dates in 1900
+
+<p></p>
+
+* ## In Denmark, the first baby born on January 1 was recorded as being 100 years old
+
+<p></p>
+
+* ## In New York, a video store accidentally generated a $91,250 late fee because the store computer determined a tape rental was 100 years overdue
+
+::right::
+
+<img src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/y2k.jpeg" alt="A bug plushy wearing a tee shirt that says y2k" style="display: block; margin-left: 30px; max-width: 70%;" />
+
+<p style="opacity: 75%; margin-left: 30px;" >(Photo: eBay)</p>
+
+
+<!--
+Y2K is mainly remembered as the bug that wasn't. Well actually, I was ten at the turn of the new millennium, so what I remember is this bug plushy that my grandpa had. If you bonked it against something it made a crashing noise. Did anyone else have this? It's now worth like $8 on ebay I learned. But anyway. The use of two digit shorthand for years of course predates computers, but was standard in early computing due to ruthless bit conservation needs. As the year 2000 approached, there was widespread concern that computer systems would be unable to distinguish dates, causing major chaos.
+
+So while there wasn't widespread crises, there is an amazing list you can find on Wikipedia of things that did go wrong. These are a few of my favorites. And who among hasn't battled
+ -->
+
+---
 layout: cover
 ---
 
 <div style="margin-top: 200px">
 
-# Part 2: Bugs as Tragedies
+# Part 2: Bugs as Crises
 
 </div>
+
+<!--
+Though of course, not all bugs live in the territory of minor bother or humorous historical footnote. While our jobs may not be as high stakes as surgeons or nuclear power engineers, what we build matters. The things we fail to account for, the unhandled edge cases, the mistakes that no one caught in review can have real consequences sometimes.
+ -->
 ---
 layout: cover
+---
+
+# Deadly race conditions
+
+* ## In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected
+
+<p></p>
+
+* ## The Northeast blackout of 2003, which resulted in approximately 100 deaths, was set into motion by a race condition in the alarm system at the control room of FirstEnergy, an Akron, Ohio
+
+<!--
+Race conditions are one of those classic, aggravating programming problems that we all encounter from time to time.
+
+In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected. And while the bug was the root cause of the catastrophic dosing error this case is often held up as example of how software processes, and software engineers, fail. The engineers responsible have been described as overconfident in their software, which was not adequately tested. They initially failed to believe user's claims of issues with the machines, or blamed it on operator error. Additionally, bad UI/UX, including cryptic error messages didn't to adequately signal to operators that something was terribly wrong.
+
+A major blackout in 2003 was also caused by a race condition.
+ -->
+
+---
+
+# The National Eating Disorders Association's Dangerous ChatBot
+
+<p></p>
+
+## "The recommendations that Tessa gave me was that I could lose 1 to 2 pounds per week, that I should eat no more than 2,000 calories in a day, that I should have a calorie deficit of 500-1,000 calories per day...All of which might sound benign to the general listener. However, to an individual with an eating disorder, the focus of weight loss really fuels the eating disorder."
+
+<p></p>
+
+<p style="margin-left: 40%">-Sharon Maxwell, eating disorder survivor and recovery consultant </p>
+
+<!--
+I also wanted to talk about a more recent case, from the mental health field. There was a scandal you may have heard about earlier this year, which involved a chatbot on the website of the National Eating Disorders Association website. For many years, NEDA had a phone and chat helpline that was run by both volunteers and paid staffers. Back in May, they switched to a fully automated chatbot.
+
+Pretty soon, there were reports from users that the chatbot was providing responses that were wildly inappropriate for eating disorder survivors, like this one. Now there was a lot of finger pointing between NEDA and Cass, the company that built the chatbot. This was initially developed NOT to use a large language model, but as a strictly rule based program built entirely with pre-written messages. However, a newer version was released that leveraged AI alongside the phrase bank, which was probably how this happened.
+
+This failure, like any serious software issue that makes it to production, has a lot of layers of course. There was the initial move to an automated solution in the first place. While NEDA disputes that this was the impetus for the move, it's worth noting that the helpline staffers had just formed a union. But there are layers of product, design, and engineering here too. Somebody built this, and released it without realizing it could be harmful. And as we think about the care we facilitate with our work here at Grow, it's crucial to think about the complexities and tradeoffs of automation.
+ -->
+
 ---
 
 # Part 3: Bugs as Opportunities
@@ -254,6 +327,26 @@ layout: cover
 <img alt="Hands opening to reveal bugs" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXV6emplNWlrbzhzZnNlN3dyc3R1aW9ocmlqOHM4b3ltd2tiM2diOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hfBvI2Pq6zCYo/giphy.gif" style="display: block; margin: 0 auto; max-width: 85%"/>
 
 <p style="text-align: center; opacity: 75%;">(GIF: Max Litvinov via GIPHY)</p>
+
+<!--
+So while it's so important to think about the very real stakes of our work, one of favorite ways, or at least aspirationally my favorite way, to think about bugs, is about opportunities to improve -- ourselves, our teams, our processes, and our systems
+ -->
+---
+
+# Opportunity #1: Deepen our understanding
+
+---
+
+# Opportunity #2: Strengthen our relationships
+
+---
+
+# Opportunity #3: Improve our processes
+
+---
+
+# Opportunity #4: Improve our systems
+
 
 ---
 
