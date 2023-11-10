@@ -36,7 +36,7 @@ layout: two-cols
 
 # 1. Bugs as Nuisances
 
-# 2. Bugs as Tragedies
+# 2. Bugs as Crises
 
 # 3. Bugs as Opportunities
 
@@ -47,7 +47,7 @@ layout: two-cols
 
 
 
-<!-- And specifically, I want to think about bugs in 3 ways: as nuisances, as tragedies, and as opportunities  -->
+<!-- And specifically, I want to think about bugs in 3 ways: as nuisances, as crises, and as opportunities  -->
 
 ---
 
@@ -198,13 +198,13 @@ export function VideoThumbnail({
 What happened here is that I needed to add a tailwind class to mirror the video thumbnail. But when the video is off, the thumbnail display's the user's name instead. Buttttt I applied the mirroring class to the div that wraps the video itself rather than the video, and I never tested what that would look like with the video off.
  -->
 
----
+<!-- ---
 
 # The case of the 0 minute mile
 
 <img alt="A screenshot that says 'Race Page: 0:00/mi'" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/pace.png" style="display: block; max-width: 40%; margin: 0 auto;  "/>
 
-<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 45%"/>
+<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 45%"/> -->
 
 
 <!--
@@ -286,14 +286,18 @@ layout: cover
 
 # Deadly race conditions
 
-* ## The Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected
+* ## In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected
 
 <p></p>
 
 * ## The Northeast blackout of 2003, which resulted in approximately 100 deaths, was set into motion by a race condition in the alarm system at the control room of FirstEnergy, an Akron, Ohio
 
 <!--
-Race conditions are one of those classic programming problems that we all encounter from time to time
+Race conditions are one of those classic, aggravating programming problems that we all encounter from time to time.
+
+In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected. And while the bug was the root cause of the catastrophic dosing error this case is often held up as example of how software processes, and software engineers, fail. The engineers responsible have been described as overconfident in their software, which was not adequately tested. They initially failed to believe user's claims of issues with the machines, or blamed it on operator error. Additionally, bad UI/UX, including cryptic error messages didn't to adequately signal to operators that something was terribly wrong.
+
+A major blackout in 2003 was also caused by a race condition.
  -->
 
 ---
@@ -308,6 +312,14 @@ Race conditions are one of those classic programming problems that we all encoun
 
 <p style="margin-left: 40%">-Sharon Maxwell, eating disorder survivor and recovery consultant </p>
 
+<!--
+I also wanted to talk about a more recent case, from the mental health field. There was a scandal you may have heard about earlier this year, which involved a chatbot on the website of the National Eating Disorders Association website. For many years, NEDA had a phone and chat helpline that was run by both volunteers and paid staffers. Back in May, they switched to a fully automated chatbot.
+
+Pretty soon, there were reports from users that the chatbot was providing responses that were wildly inappropriate for eating disorder survivors, like this one. Now there was a lot of finger pointing between NEDA and Cass, the company that built the chatbot. This was initially developed NOT to use a large language model, but as a strictly rule based program built entirely with pre-written messages. However, a newer version was released that leveraged AI alongside the phrase bank, which was probably how this happened.
+
+This failure, like any serious software issue that makes it to production, has a lot of layers of course. There was the initial move to an automated solution in the first place. While NEDA disputes that this was the impetus for the move, it's worth noting that the helpline staffers had just formed a union. But there are layers of product, design, and engineering here too. Somebody built this, and released it without realizing it could be harmful. And as we think about the care we facilitate with our work here at Grow, it's crucial to think about the complexities and tradeoffs of automation.
+ -->
+
 ---
 
 # Part 3: Bugs as Opportunities
@@ -316,23 +328,25 @@ Race conditions are one of those classic programming problems that we all encoun
 
 <p style="text-align: center; opacity: 75%;">(GIF: Max Litvinov via GIPHY)</p>
 
+<!--
+So while it's so important to think about the very real stakes of our work, one of favorite ways, or at least aspirationally my favorite way, to think about bugs, is about opportunities to improve -- ourselves, our teams, our processes, and our systems
+ -->
 ---
 
-# Solving bugs can...
+# Opportunity #1: Deepen our understanding
 
-* ## Deepen understanding
+---
 
-<p></p>
+# Opportunity #2: Strengthen our relationships
 
-* ## Strengthen relationships
+---
 
-<p></p>
+# Opportunity #3: Improve our processes
 
-* ## Improve processes
+---
 
-<p></p>
+# Opportunity #4: Improve our systems
 
-* ## Improve systems
 
 ---
 
