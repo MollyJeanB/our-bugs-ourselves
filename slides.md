@@ -46,7 +46,6 @@ layout: two-cols
 <p style="opacity: 75%; text-align: center">(GIF: Fox via GIPHY)</p>
 
 
-
 <!-- And specifically, I want to think about bugs in 3 ways: as nuisances, as crises, and as opportunities  -->
 
 ---
@@ -132,7 +131,7 @@ And the word bug itself comes from the old english bugge, which did not refer to
 
 So the moth in the logbook was almost definitely documented with humorous intent, a real life bug causing a real life engineering problem.
 
-And I love how it represents a lot of how we think and talk about bugs in software, whether they're insects or monsters, as these outside interlopers who come into our code and muck things up. 
+And I love how it represents a lot of how we think and talk about bugs in software, whether they're insects or monsters, as these outside interlopers who come into our code and muck things up.
  -->
 
 ---
@@ -318,6 +317,8 @@ I also wanted to talk about a more recent case, from the mental health field. Th
 Pretty soon, there were reports from users that the chatbot was providing responses that were wildly inappropriate for eating disorder survivors, like this one. Now there was a lot of finger pointing between NEDA and Cass, the company that built the chatbot. This was initially developed NOT to use a large language model, but as a strictly rule based program built entirely with pre-written messages. However, a newer version was released that leveraged AI alongside the phrase bank, which was probably how this happened.
 
 This failure, like any serious software issue that makes it to production, has a lot of layers of course. There was the initial move to an automated solution in the first place. While NEDA disputes that this was the impetus for the move, it's worth noting that the helpline staffers had just formed a union. But there are layers of product, design, and engineering here too. Somebody built this, and released it without realizing it could be harmful. And as we think about the care we facilitate with our work here at Grow, it's crucial to think about the complexities and tradeoffs of automation.
+
+Because of course, we all know that in reality bugs are really external insects or monsters. Usually, we create them. Which means we can prevent them, too.
  -->
 
 ---
@@ -335,21 +336,62 @@ So while it's so important to think about the very real stakes of our work, one 
 
 # Opportunity #1: Deepen our understanding
 
+<img alt="Screenshot of react issue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/react2016.png" style="max-width: 70%; margin: 0 auto" />
+
+
+<!--
+You know that feeling when a bug sends you down a weird and specific little rabbit hole? Like a small but confounding UI bug that leads you to closed GitHub issue from 2016 that teaches you that empty/null/undefined react children are still included in a count when mapped over?? And it's such a beautiful journey of discovery??
+ -->
+
 ---
 
-# Opportunity #2: Strengthen our relationships
+# Opportunity #2: Improve our processes
+
+<p></p>
+
+## Logging! Monitoring! Testing! QA!
+
+<p></p>
+<div style="display: flex;">
+<div>
+<img alt="Black and white gif of two men chopping down a tree" src="https://media.giphy.com/media/beARHtCFKRg4GBMaas/giphy.gif" style="max-width: 85%;" />
+
+<p style="opacity: 75%;"> Logging (GIF: National WWI Museum via GIPHY )</p>
+</div>
+<div>
+<img alt="Monitor lizard" src="https://thumbor.bigedition.com/komodo-dragon-with-open-mouth/wdM1bIIuZe3q_mM87v_GH_IX9ms=/139x0:1254x836/800x600/filters:format(webp):quality(80)/granite-web-prod/72/25/72254d165a65440e89f320fe516be2af.jpeg" style="max-width: 402px" />
+
+<p style="opacity: 75%;">Monitor (Photo: Getty Images )</p>
+</div>
+</div>
+
+<!--
+And once we've solved a bug, we like to step back and see how we could prevent a similar issue from occurring in the future.
+
+When Jasmine presented to the FE guild at the onsite last month, I loved how she talked about "evaluative versus validation." Robust systems of logging, monitoring, and testing help us not just validate whether things are working as expected, but evaluate issues we hadn't even considered.
+ -->
 
 ---
 
-# Opportunity #3: Improve our processes
+# Opportunity #3: Strengthen our relationships
 
----
+<img alt="Pears figure skating" src="https://media.giphy.com/media/fBS9UfNnOtkVDqR70I/giphy.gif" style="max-width: 100%; margin: 0 auto" />
 
-# Opportunity #4: Improve our systems
+<p style="opacity: 75%; text-align: center;"> (GIF: via GIPHY )</p>
 
+<!--
+Thorny problems in our code don't just unite use through critsit trauma bonding--tho that too! Just like the most spectacular failures must involve layers of error--lack or oversight, planning, testing, checking assumptions, the greatest successes and comebacks are also collective.
+
+The most challenging problems usually require multiple minds, and expanding our perspective through pair programming, intensive reviews, and good questions, makes us all better.
+ -->
 
 ---
 
 <img alt="A caterpillar going into a cocoon and saying Goodbye" src="https://media.giphy.com/media/26ufpPR34nEWwZphC/giphy.gif" style="margin: 60px auto 0" />
 <p style="opacity: 75%; text-align: center">(GIF: Parker Jackson via GIPHY)</p>
 
+<!--
+So we can emerge triumphantly, like moths from our cocoons. 
+
+Thank you!
+ -->
