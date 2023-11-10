@@ -317,6 +317,8 @@ I also wanted to talk about a more recent case, from the mental health field. Th
 Pretty soon, there were reports from users that the chatbot was providing responses that were wildly inappropriate for eating disorder survivors, like this one. Now there was a lot of finger pointing between NEDA and Cass, the company that built the chatbot. This was initially developed NOT to use a large language model, but as a strictly rule based program built entirely with pre-written messages. However, a newer version was released that leveraged AI alongside the phrase bank, which was probably how this happened.
 
 This failure, like any serious software issue that makes it to production, has a lot of layers of course. There was the initial move to an automated solution in the first place. While NEDA disputes that this was the impetus for the move, it's worth noting that the helpline staffers had just formed a union. But there are layers of product, design, and engineering here too. Somebody built this, and released it without realizing it could be harmful. And as we think about the care we facilitate with our work here at Grow, it's crucial to think about the complexities and tradeoffs of automation.
+
+Because of course, we all know that in reality bugs are really external insects or monsters. Usually, we create them. Which means we can prevent them, too.
  -->
 
 ---
@@ -343,7 +345,6 @@ You know that feeling when a bug sends you down a weird and specific little rabb
 
 ---
 
-
 # Opportunity #2: Improve our processes
 
 <p></p>
@@ -364,6 +365,12 @@ You know that feeling when a bug sends you down a weird and specific little rabb
 </div>
 </div>
 
+<!--
+And once we've solved a bug, we like to step back and see how we could prevent a similar issue from occurring in the future.
+
+When Jasmine presented to the FE guild at the onsite last month, I loved how she talked about "evaluative versus validation." Robust systems of logging, monitoring, and testing help us not just validate whether things are working as expected, but evaluate issues we hadn't even considered.
+ -->
+
 ---
 
 # Opportunity #3: Strengthen our relationships
@@ -373,7 +380,9 @@ You know that feeling when a bug sends you down a weird and specific little rabb
 <p style="opacity: 75%; text-align: center;"> (GIF: via GIPHY )</p>
 
 <!--
-Thorny problems in our code don't just unite use through critsit trauma bonding--tho that too! The biggest problems almost always 
+Thorny problems in our code don't just unite use through critsit trauma bonding--tho that too! Just like the most spectacular failures must involve layers of error--lack or oversight, planning, testing, checking assumptions, the greatest successes and comebacks are also collective.
+
+The most challenging problems usually require multiple minds, and expanding our perspective through pair programming, intensive reviews, and good questions, makes us all better.
  -->
 
 ---
@@ -381,3 +390,8 @@ Thorny problems in our code don't just unite use through critsit trauma bonding-
 <img alt="A caterpillar going into a cocoon and saying Goodbye" src="https://media.giphy.com/media/26ufpPR34nEWwZphC/giphy.gif" style="margin: 60px auto 0" />
 <p style="opacity: 75%; text-align: center">(GIF: Parker Jackson via GIPHY)</p>
 
+<!--
+So we can emerge triumphantly, like moths from our cocoons. 
+
+Thank you!
+ -->
