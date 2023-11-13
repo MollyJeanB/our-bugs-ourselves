@@ -42,7 +42,7 @@ layout: two-cols
 
 ::right::
 
-<img alt="A cartoon spider in boots and a leather jacket holding knives and pizza" src="https://media.giphy.com/media/ZtLg38lWRcLGE/giphy.gif" style="" />
+<img alt="A cartoon spider in boots and a leather jacket holding knives and pizza" src="https://media.giphy.com/media/ZtLg38lWRcLGE/giphy.gif" style="max-width: 90%; margin-left: 30px;" />
 <p style="opacity: 75%; text-align: center">(GIF: Fox via GIPHY)</p>
 
 
