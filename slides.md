@@ -42,7 +42,7 @@ layout: two-cols
 
 ::right::
 
-<img alt="A cartoon spider in boots and a leather jacket holding knives and pizza" src="https://media.giphy.com/media/ZtLg38lWRcLGE/giphy.gif" style="" />
+<img alt="A cartoon spider in boots and a leather jacket holding knives and pizza" src="https://media.giphy.com/media/ZtLg38lWRcLGE/giphy.gif" style="max-width: 90%; margin-left: 30px;" />
 <p style="opacity: 75%; text-align: center">(GIF: Fox via GIPHY)</p>
 
 
@@ -50,13 +50,13 @@ layout: two-cols
 
 ---
 
-# Introduction: Grace Hopper (maybe) and the "First actual case of bug being found"
+# Introduction: The "First actual case of bug being found"
 
 <img alt="Photograph of logbook page with moth taped to it" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/moth.jpeg" style="display: block; margin: 0 auto; max-width: 60%"/>
 
 <p style="text-align: center; opacity: 75%;">RIP Moth (Photo: Smithsonian)</p>
 
-<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with Grace Hopper’s moth. Maybe you’ve seen this image of a Harvard logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II.
+<!-- But first, I want to talk a little about the history of software bugs as we know them. I’m going to start with the moth. Maybe you’ve seen this image of a 1947 Harvard logbook. If you can’t read it, the text says “First actual case of bug being found,” which of course refers to this moth, which was found inside the Mark II.
  -->
 
 ---
@@ -66,9 +66,9 @@ layout: two-cols
 <p style=" opacity: 75%; text-align: center" >A bank of relays of the Harvard Mark II (Photo: Smithsonian)</p>
 
 <!--
-This is a bank of relays on the Mark II, where the moth was found. It was finished in 1947 was an early electro-mechanical computers. It was built at Harvard and funded by the U.S. Navy to calculate ballistics. Most of the early computers were for war and astronomy. And making fabrics.
+This is a bank of relays on the Mark II, an early electro-mechanical computers. It was built at Harvard and funded by the U.S. Navy to calculate ballistics. Most of the early computers were for war. And also astronomy and making fabrics.
 
-But anyway, the relays. The relays are mechanical components that could be opened and closed sequentially to execute programs. And on the day in question, September 9, 1947, a moth got jammed between points at Relay # 70, Panel F, and jammed the relay.
+But anyway, the relays. The relays are mechanical components that could be opened and closed sequentially to execute programs. And on the day in question, September 9, 1947, a moth got between points at Relay # 70, Panel F, and jammed the relay.
  -->
 
 ---
@@ -285,7 +285,7 @@ layout: cover
 
 # Deadly race conditions
 
-* ## In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected
+* ## In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 serious accidents (some of them fatal) when it gave patients radiation doses that were hundreds of times greater than expected
 
 <p></p>
 
@@ -294,7 +294,7 @@ layout: cover
 <!--
 Race conditions are one of those classic, aggravating programming problems that we all encounter from time to time.
 
-In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 deaths when it gave patients radiation doses that were hundreds of times greater than expected. And while the bug was the root cause of the catastrophic dosing error this case is often held up as example of how software processes, and software engineers, fail. The engineers responsible have been described as overconfident in their software, which was not adequately tested. They initially failed to believe user's claims of issues with the machines, or blamed it on operator error. Additionally, bad UI/UX, including cryptic error messages didn't to adequately signal to operators that something was terribly wrong.
+In the mid-1980s, the Therac-25, a computer-controlled radiation therapy machine, was involved in at least 6 serious accidents when it gave patients radiation doses that were hundreds of times greater than expected. And while the bug was the root cause of the catastrophic dosing error this case is often held up as example of how software processes, and software engineers, fail. The engineers responsible have been described as overconfident in their software, which was not adequately tested. They initially failed to believe user's claims of issues with the machines, or blamed it on operator error. Additionally, bad UI/UX, including cryptic error messages didn't to adequately signal to operators that something was terribly wrong.
 
 A major blackout in 2003 was also caused by a race condition.
  -->
