@@ -164,7 +164,7 @@ layout: two-cols
 
 
 <!--
-Here's a fun one that I was responsible for recently. This is from telehealth, but it was caught before the beta release thankfully (thanks Sofia, I think).
+Here's a fun one that I was responsible for recently. I've been working on building a video telehealth web app at work, and I was implementing video mirroring for a video thumbnail.
  -->
 ---
 
@@ -192,47 +192,12 @@ export function VideoThumbnail({
  )
 };
 ```
-
-<!--
-What happened here is that I needed to add a tailwind class to mirror the video thumbnail. But when the video is off, the thumbnail display's the user's name instead. Buttttt I applied the mirroring class to the div that wraps the video itself rather than the video, and I never tested what that would look like with the video off.
- -->
-
-<!-- ---
-
-# The case of the 0 minute mile
-
-<img alt="A screenshot that says 'Race Page: 0:00/mi'" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/pace.png" style="display: block; max-width: 40%; margin: 0 auto;  "/>
-
-<img alt="A smiling group of people at the Hood to Coast relay finish line" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/htc.jpg" style="display: block; margin: 30px auto; max-width: 45%"/> -->
-
-
-<!--
-And here's on I saw as a user. This year I ran the Hood to Coast relay. When you register, you need to enter a pace from a previous race, which the organizers will use to figure out how fast your team is and hence, what your start time should be. But at some point, the entered values were converted from one system to another, and any values without a seconds input were converted to zeroes. Which means that multiple teammates were registered with a 0 minute mile. Now this is a fast, good-looking group of people, but none of them can run a 0 minute mile. So it was a pretty big headache for our team captain to get our start time adjusted.
- -->
----
-layout: two-cols
 ---
 
-<template v-slot:default>
-<div style="padding-top: 50px;">
-
-## "A developer put an image of Bart Simpson into the product as a placeholder. We forgot to replace it with the actual image that it was supposed to be, and shipped the product. Fox was not happy and 'politely' asked us to not do that and to give them some money, which we did."
-
-<p style="margin-left: 60%">-Rolf Buchner</p>
-</div>
-</template>
-<template v-slot:right>
-
-<div style="padding-top: 50px;">
-<img src="https://media.giphy.com/media/3orieTf8aTrSXmonqo/giphy.gif" alt="Bart and Homer Simpson sitting at a table eating, with the caption 'Dad, there's a bug on that'" style="display: block; margin-left: 30px; max-width: 90%;" />
-
-<p style="opacity: 75%; margin-left: 30px;" >(GIF: Simpsons via GIPHY, please don't sue)</p>
-
-</div>
-</template>
+<img alt="Screenshot of a news site with the headline: 'Baldur's Gate 3 Companions Were Never Meant To Be So Thirsty'" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/thirsty.png" style="display: block; margin: 25px auto 0; max-width: 60%"/>
 
 <!--
-And here's a good one from Rolf, from his time at a major Seattle area tech company.
+And here's a good one from the gaming world. Basically the numeric threshold for, um, thirstiness, in Baldur's Gate 3 was set too low in error. I...hesitate to even call this a problem? I don't know I don't play video games.
  -->
 
 ---
@@ -336,11 +301,88 @@ So while it's so important to think about the very real stakes of our work, one 
 
 # Opportunity #1: Deepen our understanding
 
-<img alt="Screenshot of react issue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/react2016.png" style="max-width: 70%; margin: 0 auto" />
-
+<img alt="Mis-aligned badges" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/badges.png" style="max-width: 60%; margin: 20px auto" />
 
 <!--
-You know that feeling when a bug sends you down a weird and specific little rabbit hole? Like a small but confounding UI bug that leads you to closed GitHub issue from 2016 that teaches you that empty/null/undefined react children are still included in a count when mapped over?? And it's such a beautiful journey of discovery??
+Here's a fun little rabbit hole I went down earlier this year. There was a tiny little visual bug, where there was an undesired leading space in a group of badges from a third party component library I was using at work. This is a simplified version that I recreated
+ -->
+---
+
+```js {all|6|8-12|17-25|all}
+
+export default function App() {
+  return (
+    <main>
+      <h3>{"This group displays as expected:"}</h3>
+      <WarningBadgeGroup isOverdue isDamaged isUnknownStatus />
+      <h3>{"This group has undesired leading spacing:"}</h3>
+      <WarningBadgeGroup
+        isOverdue={false}
+        isDamaged
+        isUnknownStatus
+      />
+    </main>
+  )
+}
+
+const WarningBadgeGroup = ({ isOverdue, isDamaged, isUnknownStatus }) => {
+  return (
+      <BadgeGroup>
+          {isOverdue && <Badge text={'Overdue'} />}
+          {isDamaged && <Badge text={'Damaged'} />}
+          {isUnknownStatus && <Badge text={'Status Unknown'} />}
+      </BadgeGroup>
+  )
+}
+```
+
+<!--
+And here's a little demo of the implementation. You have the app here, with two instances of a warning badge component. In one instance all the props are set to true, and in the second instance one of them is false
+
+And then here's the badge group, which renders a badge for each prop if it is set to true. Common enough pattern.
+ -->
+
+---
+
+```js {all|6-8|all}
+
+// BadgeGroup component
+const BadgeGroup = ({ children }) => {
+  return (
+    <div className='badgeGroup'>
+      {children.map((child) => {
+        return <span className={'badgeItem'}>{child}</span>
+      })}
+    </div>
+  )
+}
+```
+
+### CSS
+
+```css
+.badgeGroup {
+  display: flex;
+}
+
+.badgeItem:not(:last-child) {
+  margin-right: 10px;
+}
+```
+
+<!--
+And then here are the underlying group components, where the badgegroup maps over child badges, applying the proper spacing, etc. So why are we getting a random space when something doesn't render?
+ -->
+
+---
+
+<img alt="Screenshot of react issue" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/react2016cropped.png" style="max-width: 75%;" />
+
+### The Response
+<img alt="Screenshot of react issue response" src="https://our-bugs-ourselves.s3.us-west-2.amazonaws.com/sophiebits.png" style="max-width: 80%;" />
+
+<!--
+And this led me to a closed React issue from 2016. Empty children are counted in map, forEach, and count methods, but are skipped over in toArray. So the bug I was seeing in the third party library failed to account for the existence of empty children when mapping over an array of elements.
  -->
 
 ---
@@ -395,3 +437,19 @@ So we can emerge triumphantly, like moths from our cocoons.
 
 Thank you!
  -->
+
+---
+
+# Links!
+
+<p></p>
+
+## 📝 Citations, slide markdown, and notes: https://github.com/MollyJeanB/our-bugs-ourselves
+
+<p></p>
+
+## 🛝 Deployed slides: https://our-bugs-ourselves.vercel.app/
+
+<p></p>
+
+## 🤸‍♀️ My silly little website: https://www.mollyjeanbennett.com/

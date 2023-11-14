@@ -20,6 +20,8 @@ can be found in [slides.md](./slides.md).
 
 ### Part 1: Bugs as Nuisances
 
+* Walker, John. ["Baldur's Gate 3 Companions Were Never Meant To Be So Thirsty](https://kotaku.com/baldurs-gate-3-d-d-companions-relationship-horny-bug-1850801750). _Kotaku_, 2023.
+
 * ["Year 2000 problem"](https://en.wikipedia.org/wiki/Year_2000_problem#cite_note-Forbes-70). _Wikipedia_.
 
 ### Part 2: Bugs as Crises
